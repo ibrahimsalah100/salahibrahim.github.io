@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX1:ANIMATION</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="contenaire1">
+            <div class="champ" id="parmetrage">
+                <p>CHAMP DE PARAMETRAGE</p>
+                <label for="couleur">couleur:</label>
+                <input type="color" id="color" value="#A41322">
+                <br><br>
+                <label for="dimension">dimension:</label>
+                <input type="range" id="dimension" min="10" max="70" value="15">
+                <br><br>
+                <label for="text">texte: </label>
+                <input type="text" id="texte" placeholder="texte contenu dans le claque">
+                <br><br>
+                <label for="transparence">transparence:</label>
+                <input type="range" id="transparence" min="0" max="10" value="0">
+                <br><br>
+                <button onclick="enregistrer()">enregistrer</button>               
+            </div>
+            <div class="champ" id="animation">
+                <p>CHAMP D'ANIMATION</p>
+                <label for="horizontal">commeence de : </label>
+                <select id="start-h">
+                    <option  value="gauche">la gauche</option>
+                    <option value="droite">la droite</option>
+                </select>
+                <br><br>
+                <label for="vertical">commence du :</label>
+                <select id="start-v">
+                    <option value="bas">bas</option>
+                    <option value="haut">haut</option>
+                </select>
+                <br><br>
+                <label for="parcours">parcours :</label>
+                <select id="parcours">
+                    <option value="H">horizontal</option>
+                    <option value="V">vertical</option>
+                    <option value="D">diagonal</option>
+                </select>
+                <br><br>
+                <button onclick="Animer()">animer</button>
+            </div>
+        </div>
+        <div id="contenaire2">
+            <div id="calque"></div>
+        </div>
+    </body>
+</html>

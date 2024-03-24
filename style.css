@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.contenaire1{
+    justify-content: space-between;
+    display: flex;
+}
+.champ{
+    display: inline-block;
+    border: 2px solid indigo;
+    padding: 15px;
+    margin: 1px;
+    width: 40%;
+    vertical-align: top;
+}
+#contenaire2{
+    border: 2px solid;
+    border-color: indigo;
+    flex: 1; 
+    margin: 1px;
+    margin-top: 6px;
+    position: relative;
+}
+#calque{
+    margin: 0;
+    height: 20%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    text-align: center;
+}
+button{
+    font-family: arial;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+    border: 5px solid green;
+}
